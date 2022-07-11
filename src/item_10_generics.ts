@@ -1,5 +1,5 @@
-export function item_10_generics_1() {
-  console.log("item_10_generics_1");
+export function item_10_generics() {
+  console.log("item_10_generics");
 }
 
 /* ------Básico generics(genérico)------ */
@@ -119,3 +119,20 @@ function createInstance<A extends Animal>(c: new () => A): A {
 createInstance(Lion).keeper.nametag;
 createInstance(Bee).keeper.hasMask;
 /* ------------------------ */
+
+/* Exemplo 1 */
+interface Exemplo1<T> {
+  param1: number;
+  param2: T;
+  param3: T[];
+  param4: string[];
+}
+
+/* Exemplo 2 */
+function TesteGenerico<T>(valor: T): T {
+  return valor;
+}
+
+TesteGenerico<number>(1);
+TesteGenerico<string>("1");
+TesteGenerico<number[]>([1,2,3,4,8]);
