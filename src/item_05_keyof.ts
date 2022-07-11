@@ -21,7 +21,5 @@ type M = keyof Mapish;
 
 /* Exemplo 4 */
 interface Exemplo1 {
-  lista1: {
-    [k: string]: string;
-  };
+  [k: string]: string;
 }
