@@ -7,6 +7,8 @@ export function item_09_typeof() {
   (The typeof type operator => JavaScript already has a typeof operator you can use in an expression context.)
 */
 
+/* Verifica o tipo de uma variável ou propriedade */
+
 /* Exemplo 1 */
 console.log(typeof "Hello world");
 
